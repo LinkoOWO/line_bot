@@ -4,8 +4,8 @@ from linebot.exceptions import InvalidSignatureError, LineBotApiError
 from linebot.models import MessageEvent, MessageAction, TextMessage, TextSendMessage,ImageSendMessage, StickerSendMessage, LocationSendMessage, AudioSendMessage, VideoSendMessage
 import datetime, threading, sqlite3, re
 
-line_bot_api = LineBotApi("HypklMihoGXHzV9uLERGELx3LtxTNZUddpP/yHjaoUoqlUnCw4MIMp/izCAnkfUx3NVcrx7onVFuP/ooB22XDsmczOISSc76BOidcST+eu42c7GYcG0p2MRRgtJ7bIGr/rfV5nG8rmaeay1KmvMVTQdB04t89/1O/w1cDnyilFU=")
-handler = WebhookHandler("941ad0fd9849de2a761031120d2626b1")
+line_bot_api = LineBotApi("")
+handler = WebhookHandler("")
 
 def init_db():
     conn = sqlite3.connect("message_log.db")
